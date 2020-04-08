@@ -18,7 +18,7 @@ public class MyContainer1<T> {
 	
 	
 	public synchronized void put(T t) {
-		while(lists.size() == MAX) { //想想为什么用while而不是用if？
+		while(lists.size() == MAX) { //想想为什么用while而不是用if？ while会在进行一次判断
 			try {
 				this.wait(); //effective java
 			} catch (InterruptedException e) {
@@ -28,7 +28,7 @@ public class MyContainer1<T> {
 		
 		lists.add(t);
 		++count;
-		this.notifyAll(); //通知消费者线程进行消费
+		this.notifyAll(); //通知消费者线程进行消费 如果用notify()的话 叫醒的可能还是一个生产者
 	}
 	
 	public synchronized T get() {
