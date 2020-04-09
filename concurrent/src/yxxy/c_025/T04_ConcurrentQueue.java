@@ -1,4 +1,4 @@
-﻿package yxxy.c_025;
+package yxxy.c_025;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;

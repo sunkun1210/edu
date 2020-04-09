@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 认识future
  */
 package yxxy.c_026;

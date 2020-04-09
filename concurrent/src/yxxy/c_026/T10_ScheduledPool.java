@@ -1,4 +1,4 @@
-﻿package yxxy.c_026;
+package yxxy.c_026;
 
 import java.util.Random;
 import java.util.concurrent.Executors;

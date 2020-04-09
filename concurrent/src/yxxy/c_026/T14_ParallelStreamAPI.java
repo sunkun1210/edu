@@ -1,4 +1,4 @@
-﻿package yxxy.c_026;
+package yxxy.c_026;
 
 import java.util.ArrayList;
 import java.util.List;
